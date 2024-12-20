@@ -1,0 +1,286 @@
+#sub-nav-barR {
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    color: rgba(255, 255, 255, 1);
+    font-size: 22px;
+    font-weight: 500;
+    list-style: none;
+    padding: 0;
+    position: fixed;
+    top: 16%;
+    left: 80%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 30vw;
+    height: 12vh;
+    border: 3px solid #FFF;
+    border-radius: 30px;
+    display: flex;
+    background: rgba(24, 24, 24, 1);
+}
+
+#sub-nav-barL {
+    margin: auto;
+    align-items: center;
+    justify-content: space-evenly;
+    color: rgba(255, 255, 255, 1);
+    font-size: 22px;
+    font-weight: 500;
+    list-style: none;
+    padding: 0;
+  
+    position: fixed;
+    top: 16%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+  
+    width: 30vw;
+    height: 12vh;
+    border: 3px solid #FFF;
+    border-radius: 30px;
+    display: flex;
+    background: rgba(24, 24, 24, 1);
+}
+  
+#sub-nav-barL li {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+
+#sub-nav-barR li {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+}
+
+#menu {
+    padding-top: 1500vh;
+}
+
+.menuImg {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    position: absolute;
+    scroll-margin-top: 100%;
+
+}
+
+#zoomPromp {
+  position: absolute; /* Posicionamiento sobre la imagen */
+  top: 40%; /* Centrado vertical */
+  left: 20%; /* Centrado horizontal */
+  transform: translate(-50%, -50%); /* Ajuste para el centro real */
+  color: rgb(0, 0, 0); /* Color del texto */
+  background-color: rgba(255, 255, 255, 0.5); /* Fondo semitransparente */
+  padding: 10px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  text-align: center; /* Centra el texto */
+  max-width: 90%; /* Evita que el texto sea más ancho que la imagen */
+  word-wrap: break-word; /* Ajusta el texto en líneas si es muy largo */
+  font-size: 30px;
+  text-decoration:underline;
+}
+
+#entryFoodPhoto {
+    overflow: hidden;
+    position: relative;
+    width: 40vw;
+    height: auto;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 0px 0px 20px 14px rgb(0 0 0 / 35%);
+    z-index: -1;
+    right: 5vw;
+    border: 2px  solid #d6d6d6c7;
+}
+
+#pizzaFoodPhoto {
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    height: 60vh;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 0px 0px 20px 14px rgb(0 0 0 / 35%);
+    z-index: -1;
+    right: 6vw;
+    border: 2px  solid #d6d6d6c7;
+}
+
+#lasagnaFoodPhoto {
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    height: 60vh;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 0px 0px 20px 14px rgb(0 0 0 / 35%);
+    z-index: -1;
+    right: 8vw;
+    border: 2px  solid #d6d6d6c7;
+}
+
+#panzerottiFoodPhoto {
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    height: 52vh;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 0px 0px 20px 14px rgb(0 0 0 / 35%);
+    z-index: -1;
+    right: 3vw;
+    border: 2px  solid #d6d6d6c7;
+}
+
+.zoomPromp {
+    opacity: 0%;
+}
+
+#burguerFoodPhoto {
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    height: 60vh;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 0px 0px 20px 14px rgb(0 0 0 / 35%);
+    z-index: -1;
+    right: 10vw;
+    border: 2px  solid #d6d6d6c7;
+}
+
+#othersFoodPhoto {
+    z-index: -1;
+    position: relative;
+    width: auto;
+    height: 55vh;
+    right: 3vw;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 0px 0px 20px 14px rgb(0 0 0 / 35%);
+    border: 2px  solid #d6d6d6c7;
+}
+
+#kidsFoodPhoto {
+    z-index: -1;
+    left: -4vw;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    height: 45vh;
+    right: 1vw;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 0px 0px 20px 14px rgb(0 0 0 / 35%);
+    z-index: -1;
+    border: 2px  solid #d6d6d6c7;
+}
+
+#drinksFoodPhoto {
+    z-index: -1;
+    left: -8vw;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    height: 60vh;
+    right: 1vw;
+    border-radius: 0px 10px 10px 0px;
+    box-shadow: 0px 0px 20px 14px rgb(0 0 0 / 35%);
+    z-index: -1;
+    border: 2px  solid #d6d6d6c7;
+}
+
+#pizzaPrices {
+    width: 35vw;
+    height: auto;
+}
+
+#entryMenuPhoto {
+    height: 60vh;
+    border-radius: 20px;
+    box-shadow: 35px 0px 20px 10px rgb(0 0 0 / 35%);
+    border: 2px  dashed #f3f3f3ce;
+}
+
+#pizzaMenuPhoto {
+    height: 70vh;
+    border-radius: 6px;
+    box-shadow: 35px 0px 20px 10px rgb(0 0 0 / 35%);
+    border: 2px  dashed #f3f3f3ce;
+}
+
+#lasagnaMenuPhoto {
+    height: 70vh;
+    border-radius: 6px;
+    box-shadow: 35px 0px 20px 10px rgb(0 0 0 / 35%);
+    border: 2px  dashed #f3f3f3ce;
+}
+
+#panzerottiMenuPhoto {
+    height: 60vh;
+    border-radius: 6px;
+    box-shadow: 35px 0px 20px 10px rgb(0 0 0 / 35%);
+    border: 2px  dashed #f3f3f3ce;
+}
+
+#burguersMenuPhoto {
+    height: 70vh;
+    border-radius: 6px;
+    box-shadow: 35px 0px 20px 10px rgb(0 0 0 / 35%);
+    border: 2px  dashed #f3f3f3ce;
+}
+
+#othersMenuPhoto {
+    height: 70vh;
+    border-radius: 6px;
+    box-shadow: 35px 0px 20px 10px rgb(0 0 0 / 35%);
+    border: 2px  dashed #f3f3f3ce;
+}
+
+#kidsMenuPhoto {
+    height: 50vh;
+    border-radius: 6px;
+    box-shadow: 35px 0px 20px 10px rgb(0 0 0 / 35%);
+    border: 2px  dashed #f3f3f3ce;
+}
+
+#drinksMenuPhoto {
+    height: 70vh;
+    border-radius: 6px;
+    box-shadow: 35px 0px 20px 10px rgb(0 0 0 / 35%);
+    border: 2px  dashed #f3f3f3ce;
+}
+
+#entrys {
+    top: 733vh;
+    margin-left: 5vw;
+}
+
+#pizza {
+    top: 820vh;
+    margin-left: 4VW;
+}
+#lasagna {
+    top: 925vh;
+    margin-left: 2.8vw;
+}
+#panzerotti {
+    top: 1023vh;
+    margin-left: 5vw;
+}
+#burguers {
+    top: 1124vh;
+    margin-left: 3.6vw;
+}
+#others {
+    top: 1218vh;
+    margin-left: 3vw;
+}
+#kidsMenu {
+    top: 1332vh;
+    margin-left: 8vw;
+}
+
+#drinks {
+    top: 1428vh;
+    margin-left: 8vw;
+}
