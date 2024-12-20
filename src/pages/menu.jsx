@@ -1,4 +1,5 @@
 import './css/menu.css'
+
 import React from "react";
 import {useEffect} from 'react';
 import { Link, Element } from 'react-scroll';
@@ -27,68 +28,81 @@ import salchiKids from "./img/kids/salchikids.jpeg"
 import drinksMenu from "./img/MenuPhotos/drinks.png"
 import drinks from './img/Others/drinks.jpeg'
 
-import jrLogoCol from './img/jr-logo-color.png'
 
 
 function Menu() {
     
     useEffect(() => {
-        const handleMouseOver = (photo, prompt) => {
+        const handleMouseOver = (photo) => {
             // Aplicar estilo de la foto
-            photo.style.filter = "blur(1.8px) grayscale(50%)";
-            photo.style.transform = "scale(1.04)";
-            photo.style.transition = "transform 0.3s ease";
-            
-            // Mostrar solo el prompt correspondiente
-            prompt.style.opacity = "1";
-            
-            // Ocultar otros prompts
-            zoomPrompts.forEach((otherPrompt) => {
-                if (otherPrompt !== prompt) {
-                    otherPrompt.style.opacity = "1";  // Ocultar otros prompts
-                }
-            });
+            photo.style.transform = "scale(1.4)";
+            photo.style.transition = "all 0.5s ease";
+            photo.style.marginLeft = "6vw";
+            photo.style.position = "sticky";
+            photo.style.zIndex = "0";
+            photo.style.transition = "transform 0.5s ease";
+            photo.style.boxShadow = '0 0 15px rgba(255, 255, 255, 0.5)'; // Sombra de 15px con un color blanco semi-transparente
+    
+            // Cambiar estilo del logo cuando el mouse está encima de la foto
+            const LogoJr = document.querySelector("#nav-logo");
+            if (LogoJr) {
+                LogoJr.style.opacity = '0';
+                LogoJr.style.transition = "all 0.5s ease";
+
+            }
+            // Cambiar estilo del logo cuando el mouse está encima de la foto
+            const foodPhoto = document.querySelector(".foodPhoto");
+            if (foodPhoto) {
+                photo.style.transition = "all 0.5s ease";
+
+            }
         };
     
-        const handleMouseOut = (photo, prompt) => {
+        const handleMouseOut = (photo) => {
             // Restaurar estilo de la foto
-            photo.style.filter = "blur(0) grayscale(0)";
             photo.style.transform = "scale(1)";
-            photo.style.transition = "transform 0.3s ease";
-            
-            // Ocultar el prompt correspondiente
-            prompt.style.opacity = "0";
-            zoomPrompts.forEach((otherPrompt) => {
-                if (otherPrompt !== prompt) {
-                    otherPrompt.style.opacity = "0";  // Ocultar otros prompts
-                }
-            });
+            photo.style.marginLeft = "0vw";
+            photo.style.position = "relative";
+            photo.style.zIndex = "0";
+            photo.style.top = '0vh'; // Restaurar la posición original
+            photo.style.transition = "transform 0.8s ease";
+            photo.style.boxShadow = '35px 0px 20px 10px rgb(0 0 0 / 35%)'; // Sombra de color negro semi-transparente
+    
+            // Restaurar estilo del logo cuando el mouse sale de la foto
+            const LogoJr = document.querySelector("#nav-logo");
+            if (LogoJr) {
+                LogoJr.style.opacity = '1';
+                LogoJr.style.transition = "all 0.5s ease";
+            }
+
+            const foodPhoto = document.querySelector(".foodPhoto");
+            if (foodPhoto) {
+                photo.style.transition = "all 0.5s ease";
+
+            }
         };
     
-        // Seleccionar todas las fotos y prompts
+        // Seleccionar todas las fotos
         const menuPhotos = document.querySelectorAll(".menuFoodPhoto");
-        const zoomPrompts = document.querySelectorAll(".zoomPromp");
     
         // Verificar que los elementos existan antes de agregar los event listeners
-        if (menuPhotos.length && zoomPrompts.length) {
-            menuPhotos.forEach((photo, index) => {
-                const prompt = zoomPrompts[index];  // Obtener el prompt correspondiente
-    
-                // Agregar los eventos para cada foto y su correspondiente mensaje
-                photo.addEventListener("mouseover", () => handleMouseOver(photo, prompt));
-                photo.addEventListener("mouseout", () => handleMouseOut(photo, prompt));
+        if (menuPhotos.length) {
+            menuPhotos.forEach((photo) => {
+                // Agregar los eventos para cada foto
+                photo.addEventListener("mouseover", () => handleMouseOver(photo));
+                photo.addEventListener("mouseout", () => handleMouseOut(photo));
             });
         }
     
         // Limpieza
         return () => {
-            menuPhotos.forEach((photo, index) => {
-                const prompt = zoomPrompts[index];  // Obtener el prompt correspondiente
-                photo.removeEventListener("mouseover", () => handleMouseOver(photo, prompt));
-                photo.removeEventListener("mouseout", () => handleMouseOut(photo, prompt));
+            menuPhotos.forEach((photo) => {
+                photo.removeEventListener("mouseover", () => handleMouseOver(photo));
+                photo.removeEventListener("mouseout", () => handleMouseOut(photo));
             });
         };
     }, []);
+    
     
     
     
@@ -109,68 +123,61 @@ function Menu() {
 
             <div id='entrys' class='menuImg'>
             <Element name='entradas'>
-                <div class="menuFoodPhoto">
+                <div>
                     <img src={entryMenu} alt="" id='entryMenuPhoto' class="menuFoodPhoto"/>
-                       <p className='zoomPromp'>¡¡¡click para zoom!!!</p>
                 </div>
             </Element>
-                <img src={patacon} id='entryFoodPhoto'></img>
+                <img src={patacon} id='entryFoodPhoto' className='foodPhoto'></img>
             </div>
 
 
             <div id="pizza" class='menuImg'>
             <Element name='pizza'>
-            <div class="menuFoodPhoto">
+            <div>
                 <img src={pizzaMenu} alt="" id='pizzaMenuPhoto' class="menuFoodPhoto"  />
-                <p className='zoomPromp'>¡¡¡click para zoom!!!</p>
             </div>
             </Element>
-                <img src={pizzaA} alt="" id='pizzaFoodPhoto' />
+                <img src={pizzaA} alt="" id='pizzaFoodPhoto' className='foodPhoto'/>
             </div>
 
             <div id='lasagna' class='menuImg'>
             <Element name='pastas'>
-                <div class="menuFoodPhoto">
+                <div>
                 <img src={lasagnaMenu} alt="" class="menuFoodPhoto" id='lasagnaMenuPhoto'/>
-                <p class='zoomPromp'>¡¡¡click para zoom!!!</p>
                 </div>
             </Element>
-                <img src={lasagna} id='lasagnaFoodPhoto'></img>
+                <img src={lasagna} id='lasagnaFoodPhoto' className='foodPhoto'></img>
             </div>
 
 
             <div id='panzerotti' class='menuImg'>
                 <Element>
                 <img src={panzerottiMenu} alt="" id='panzerottiMenuPhoto' class="menuFoodPhoto"/>
-                <p class='zoomPromp'>¡¡¡click para zoom!!!</p>
                 </Element>
-                <img src={panzerotti} id='panzerottiFoodPhoto'></img>
+                <img src={panzerotti} id='panzerottiFoodPhoto' className='foodPhoto'></img>
             </div>
 
             <div id='burguers' class='menuImg'>
                 <Element name='burguers'>
                 <img src={burguerMenu} alt="" id='burguersMenuPhoto' class="menuFoodPhoto"/>
-                <p class='zoomPromp'>¡¡¡click para zoom!!!</p>
                 </Element>
-                <img src={Bgimg} id='burguerFoodPhoto'></img>
+                <img src={Bgimg} id='burguerFoodPhoto' className='foodPhoto'></img>
             </div>
             
 
             <div id='others' class='menuImg'>
                 <Element name='others'>
                 <img src={othersMenu} alt="" id='othersMenuPhoto' class="menuFoodPhoto"/>
-                <p class='zoomPromp'>¡¡¡click para zoom!!!</p>
                 </Element>
-                <img src={parrillada} id='othersFoodPhoto'></img>
+                <img src={parrillada} id='othersFoodPhoto' className='foodPhoto'></img>
             </div>
 
 
             <div id='kidsMenu' class='menuImg'>
                 <Element>
                 <img src={kidsMenu} alt="" id='kidsMenuPhoto' class="menuFoodPhotoStatic"/>   
-                <p class='zoomPromp'></p>
                 </Element>
-                <img src={salchiKids} id='kidsFoodPhoto'></img>
+                <img src={salchiKids} id='kidsFoodPhoto' className='foodPhoto'></img>
             </div>
             
 
@@ -178,9 +185,8 @@ function Menu() {
             <div id='kidsMenu' class='menuImg'>
                 <Element>
                 <img src={kidsMenu} alt="" id='kidsMenuPhoto' class="menuFoodPhotoStatic"/>   {/* TENGO QUE ARREGLAR ESTO, ESTE BUG NO DEJA QUE SE BLUREEN TODAS LAS FOTOS DEL MENU */}
-                <p class='zoomPromp'></p>
                 </Element>
-                <img src={salchiKids} id='kidsFoodPhoto'></img>
+                <img src={salchiKids} id='kidsFoodPhoto' className='foodPhoto'></img>
             </div>
 
 
@@ -191,7 +197,7 @@ function Menu() {
                 <img src={drinksMenu} alt="" id='drinksMenuPhoto' class="menuFoodPhotoStatic"/>
                 <p class='zoomPromp'></p> 
             </Element>
-                <img src={drinks} id='drinksFoodPhoto'></img>
+                <img src={drinks} id='drinksFoodPhoto' className='foodPhoto'></img>
             </div>
 
             

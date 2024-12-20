@@ -41,7 +41,7 @@ a:link, a:visited, a:active {
 
 #nav-logo {
   position: fixed;
-  z-index: 2;
+  z-index: 1;
   width: 18vw;
   top: 18.5%;
   left: 50%;
