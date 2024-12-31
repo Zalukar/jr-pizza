@@ -1,0 +1,48 @@
+@media (max-width: 320px) {
+    body {
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+    #sub-nav-barR {
+        opacity: 0;
+    }
+    #sub-nav-barL {
+        opacity: 0;
+    }
+    #nav-bar{
+        top: 2%;
+        width: 400vw;
+        height: 40vh;
+    }
+    #nav-bar li {
+        opacity: 0;
+    }
+    #nav-logo {
+        position: fixed;
+        z-index: 1;
+        width: 130vw;
+        top: 7%;
+        left: 76%;        
+        transform: translate(-50%, -50%);
+      }
+    .foodPhoto {
+        opacity: 0;
+      }
+    
+    #content {
+        background-color: #00000000;
+        box-shadow: none;
+    }
+    
+    .menuFoodPhoto {
+        margin-left: 100vw;
+        height: 100vh;
+    }
+
+    .menuFoodPhotoStatic {
+        margin-left: 100vw;
+        height: 100vh;
+    }
+
+
+  }

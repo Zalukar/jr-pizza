@@ -1,4 +1,5 @@
 import './css/menu.css'
+import './css/adaptative/menuPhoneS.css'
 
 import React from "react";
 import {useEffect} from 'react';
@@ -34,27 +35,33 @@ function Menu() {
     
     useEffect(() => {
         const handleMouseOver = (photo) => {
-            // Aplicar estilo de la foto
-            photo.style.transform = "scale(1.4)";
-            photo.style.transition = "all 0.5s ease";
-            photo.style.marginLeft = "6vw";
-            photo.style.position = "sticky";
-            photo.style.zIndex = "0";
-            photo.style.transition = "transform 0.5s ease";
-            photo.style.boxShadow = '0 0 15px rgba(255, 255, 255, 0.5)'; // Sombra de 15px con un color blanco semi-transparente
+            // Detectar el ancho del dispositivo
+            const screenWidth = window.innerWidth;
     
-            // Cambiar estilo del logo cuando el mouse está encima de la foto
+            // Aplicar estilos condicionales según la resolución
+            if (screenWidth >= 1024) { // Pantallas grandes
+                photo.style.transform = "scale(1.23)";
+                photo.style.marginLeft = "2vw";
+                photo.style.boxShadow = '0 0 15px rgba(255, 255, 255, 0.5)';
+            } else if (screenWidth >= 768) { // Tablets
+                photo.style.transform = "scale(1.2)";
+                photo.style.marginLeft = "3vw";
+                photo.style.boxShadow = '0 0 10px rgba(255, 255, 255, 0.4)';
+            } else if (screenWidth >= 425)  { // Móviles
+                photo.style.transform = "scale(1.1)";
+                photo.style.marginLeft = "1vw";
+                photo.style.boxShadow = '0 0 5px rgba(255, 255, 255, 0.3)';
+            }
+    
+            photo.style.transition = "all 0.5s ease";
+            photo.style.position = "sticky";
+            photo.style.zIndex = "1";
+    
+            // Cambiar estilo del logo
             const LogoJr = document.querySelector("#nav-logo");
             if (LogoJr) {
                 LogoJr.style.opacity = '0';
                 LogoJr.style.transition = "all 0.5s ease";
-
-            }
-            // Cambiar estilo del logo cuando el mouse está encima de la foto
-            const foodPhoto = document.querySelector(".foodPhoto");
-            if (foodPhoto) {
-                photo.style.transition = "all 0.5s ease";
-
             }
         };
     
@@ -64,31 +71,22 @@ function Menu() {
             photo.style.marginLeft = "0vw";
             photo.style.position = "relative";
             photo.style.zIndex = "0";
-            photo.style.top = '0vh'; // Restaurar la posición original
-            photo.style.transition = "transform 0.8s ease";
-            photo.style.boxShadow = '35px 0px 20px 10px rgb(0 0 0 / 35%)'; // Sombra de color negro semi-transparente
+            photo.style.boxShadow = '35px 0px 20px 10px rgb(0 0 0 / 35%)';
+            photo.style.transition = "all 0.8s ease";
     
-            // Restaurar estilo del logo cuando el mouse sale de la foto
+            // Restaurar estilo del logo
             const LogoJr = document.querySelector("#nav-logo");
             if (LogoJr) {
                 LogoJr.style.opacity = '1';
                 LogoJr.style.transition = "all 0.5s ease";
-            }
-
-            const foodPhoto = document.querySelector(".foodPhoto");
-            if (foodPhoto) {
-                photo.style.transition = "all 0.5s ease";
-
             }
         };
     
         // Seleccionar todas las fotos
         const menuPhotos = document.querySelectorAll(".menuFoodPhoto");
     
-        // Verificar que los elementos existan antes de agregar los event listeners
         if (menuPhotos.length) {
             menuPhotos.forEach((photo) => {
-                // Agregar los eventos para cada foto
                 photo.addEventListener("mouseover", () => handleMouseOver(photo));
                 photo.addEventListener("mouseout", () => handleMouseOut(photo));
             });
@@ -101,10 +99,7 @@ function Menu() {
                 photo.removeEventListener("mouseout", () => handleMouseOut(photo));
             });
         };
-    }, []);
-    
-    
-    
+    }, []);    
     
 
     return (

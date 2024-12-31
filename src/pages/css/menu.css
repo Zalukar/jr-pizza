@@ -269,3 +269,15 @@
     top: 1428vh;
     margin-left: 8vw;
 }
+
+@media (max-width: 320px) {
+    .menuImg img {
+        margin-left: 100vw;
+        width: fit-content;
+    }
+
+    .menuImg{
+        height: 70vh;
+    }
+    
+}

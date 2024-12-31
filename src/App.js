@@ -2,6 +2,7 @@ import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 
 import './App.css';
+import './pages/css/adaptative/menuPhoneS.css'
 
 import jrLogo from './pages/img/jr-logo-bnw.png'
 import Bgimg1 from './pages/img/Burguers/Burguer1.png'

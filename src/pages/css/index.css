@@ -51,3 +51,11 @@ body {
 .no-scroll {
     overflow: hidden; /* Esto evitará que se haga scroll en esta sección específica */
   }
+
+  @media (max-width: 320px) {
+    .bg-images {
+      width: 400vw;
+      filter: blur(3px);
+      
+    }
+  }
