@@ -43,7 +43,7 @@ function Menu() {
                 photo.style.transform = "scale(1.23)";
                 photo.style.marginLeft = "2vw";
                 photo.style.boxShadow = '0 0 15px rgba(255, 255, 255, 0.5)';
-            } else if (screenWidth >= 768) { // Tablets
+            } else if (screenWidth >= 768) { // Tablet
                 photo.style.transform = "scale(1.2)";
                 photo.style.marginLeft = "3vw";
                 photo.style.boxShadow = '0 0 10px rgba(255, 255, 255, 0.4)';
