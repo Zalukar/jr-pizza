@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
+import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 
 import './App.css';
@@ -41,7 +41,7 @@ function App() {
       <img class='bg-images' src={nuggets} />
         <div id='content'>
           <Routes>
-            <Route path="/" element={<Navigate to="/menu" />} />
+            <Route path="/Index" element={<Menu />} />
             <Route path="/AboutUs" element={<AboutUs />} />
             <Route path="/VisitUs" element={<VisitUs />} />
             <Route path="/Social" element={<Social />} />
