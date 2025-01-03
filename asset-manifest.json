@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/jr-pizza/static/css/main.e35a3993.css",
+    "main.js": "/jr-pizza/static/js/main.0d481ebf.js",
+    "static/js/453.9cacdbf6.chunk.js": "/jr-pizza/static/js/453.9cacdbf6.chunk.js",
+    "static/media/JrTeam.png": "/jr-pizza/static/media/JrTeam.6c4176508140d2f2f1c7.png",
+    "static/media/others.png": "/jr-pizza/static/media/others.6d7bccbc6fbcaefef609.png",
+    "static/media/Burguer1.png": "/jr-pizza/static/media/Burguer1.309d49a953b15ed1d842.png",
+    "static/media/jburguersA.png": "/jr-pizza/static/media/jburguersA.11d15b2ec15d023bb79e.png",
+    "static/media/pizza.png": "/jr-pizza/static/media/pizza.bb0d0b09f1e674b94800.png",
+    "static/media/lasagna.png": "/jr-pizza/static/media/lasagna.a44c8bcd3d4a60891eb9.png",
+    "static/media/drinks.png": "/jr-pizza/static/media/drinks.a6926921e179e7417a49.png",
+    "static/media/entrys.png": "/jr-pizza/static/media/entrys.90e9eae99264003eaf20.png",
+    "static/media/panzerottis.png": "/jr-pizza/static/media/panzerottis.2d2da7b3d2cd81208c66.png",
+    "static/media/kids-menu.png": "/jr-pizza/static/media/kids-menu.6bd1eaed3dafa85088d1.png",
+    "static/media/parrillada.jpeg": "/jr-pizza/static/media/parrillada.53f502d8cc2f129d15a1.jpeg",
+    "static/media/pizzaA.jpeg": "/jr-pizza/static/media/pizzaA.0b4b2e3d381076afc989.jpeg",
+    "static/media/Clubhouse1.jpeg": "/jr-pizza/static/media/Clubhouse1.fcb877c674c422eab995.jpeg",
+    "static/media/costillasBbq.jpeg": "/jr-pizza/static/media/costillasBbq.0f88cb2c6028fcc03218.jpeg",
+    "static/media/jr-logo-color.png": "/jr-pizza/static/media/jr-logo-color.c9f6dbd9b18e54c9a708.png",
+    "static/media/salchikids.jpeg": "/jr-pizza/static/media/salchikids.c3fb587fe254d94875b9.jpeg",
+    "static/media/panzerottiA.jpeg": "/jr-pizza/static/media/panzerottiA.b0e05748928667f94c4b.jpeg",
+    "static/media/nuggets.jpeg": "/jr-pizza/static/media/nuggets.f1eeff5d9b4b3168df7c.jpeg",
+    "static/media/drinks.jpeg": "/jr-pizza/static/media/drinks.e03484e1f91d0e5ea2bf.jpeg",
+    "static/media/panzerotti.jpeg": "/jr-pizza/static/media/panzerotti.c28dd75cf7906e765559.jpeg",
+    "static/media/lasagna.jpeg": "/jr-pizza/static/media/lasagna.448730ddc800447f6606.jpeg",
+    "static/media/mazorcadaJr.jpeg": "/jr-pizza/static/media/mazorcadaJr.a23e99c072e0090774c2.jpeg",
+    "static/media/patacon.jpeg": "/jr-pizza/static/media/patacon.cd5de0b4ef51dfb0fa47.jpeg",
+    "static/media/jr-logo-bnw.png": "/jr-pizza/static/media/jr-logo-bnw.d6604f665d2cd66b6985.png",
+    "index.html": "/jr-pizza/index.html",
+    "main.e35a3993.css.map": "/jr-pizza/static/css/main.e35a3993.css.map",
+    "main.0d481ebf.js.map": "/jr-pizza/static/js/main.0d481ebf.js.map",
+    "453.9cacdbf6.chunk.js.map": "/jr-pizza/static/js/453.9cacdbf6.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e35a3993.css",
+    "static/js/main.0d481ebf.js"
+  ]
+}
