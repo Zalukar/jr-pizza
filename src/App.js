@@ -41,7 +41,7 @@ function App() {
       <img class='bg-images' src={nuggets} />
         <div id='content'>
           <Routes>
-            <Route path="/Index" element={<Menu />} />
+            <Route path="/" element={<Navigate to="/menu" />} />
             <Route path="/AboutUs" element={<AboutUs />} />
             <Route path="/VisitUs" element={<VisitUs />} />
             <Route path="/Social" element={<Social />} />
