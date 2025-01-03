@@ -1,4 +1,4 @@
-import { BrowserRouter, Link, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Link, Routes, Route, Navigate } from 'react-router-dom';
 import React, { useEffect, useState } from 'react';
 
 import './App.css';
@@ -40,12 +40,16 @@ function App() {
       <img class='bg-images' src={costillas} />
       <img class='bg-images' src={nuggets} />
         <div id='content'>
-          <Routes>
-            <Route path="/Index" element={<Menu />} />
-            <Route path="/AboutUs" element={<AboutUs />} />
-            <Route path="/VisitUs" element={<VisitUs />} />
-            <Route path="/Social" element={<Social />} />
-          </Routes>
+        <Routes>
+          {/* Ruta raíz que redirige automáticamente a /Index */}
+          <Route path="/" element={<Navigate to="/Index" />} />
+
+          {/* Rutas con sus componentes correspondientes */}
+          <Route path="/Index" element={<Menu />} />
+          <Route path="/AboutUs" element={<AboutUs />} />
+          <Route path="/VisitUs" element={<VisitUs />} />
+          <Route path="/Social" element={<Social />} />
+        </Routes>
         </div>
     </div>
   </BrowserRouter>
