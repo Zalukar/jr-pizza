@@ -25,7 +25,7 @@ function App() {
     <BrowserRouter>
     <div className="App">
       <ul id='nav-bar'>
-        <li><Link to={"/"}>Menu</Link></li>
+        <li><Link to={"/index"}>Menu</Link></li>
         <li><Link to={"/AboutUs"}>Quienes somos</Link></li>
         <li><Link to={"/VisitUs"}>Conocenos</Link></li>
         <li><Link to={"/Social"}>Nuestras redes</Link></li>
