@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react';
 
 import './App.css';
 import './pages/css/adaptative/menuPhoneS.css'
+import './pages/css/adaptative/menuLowFullscreenRes.css'
 
 import jrLogo from './pages/img/jr-logo-bnw.png'
 import Bgimg1 from './pages/img/Burguers/Burguer1.png'
@@ -30,15 +31,17 @@ function App() {
         <li><Link to={"/VisitUs"}>Conocenos</Link></li>
         <li><Link to={"/Social"}>Nuestras redes</Link></li>
       </ul>
-      <img id='nav-logo' src={jrLogo} />
-      <img class='bg-images' src={Bgimg1} />
-      <img class='bg-images' src={Clbhs1} />
-      <img class='bg-images' src={mzrcdJr} />
-      <img class='bg-images' src={parrillada} />
-      <img class='bg-images' src={lasagna} />
-      <img class='bg-images' src={panzerotti} />
-      <img class='bg-images' src={costillas} />
-      <img class='bg-images' src={nuggets} />
+      <div id='bg'>
+        <img id='nav-logo' src={jrLogo} />
+        <img class='bg-images' src={Bgimg1} />
+        <img class='bg-images' src={Clbhs1} />
+        <img class='bg-images' src={mzrcdJr} />
+        <img class='bg-images' src={parrillada} />
+        <img class='bg-images' src={lasagna} />
+        <img class='bg-images' src={panzerotti} />
+        <img class='bg-images' src={costillas} />
+        <img class='bg-images' src={nuggets} />
+      </div>
         <div id='content'>
         <Routes>
           {/* Ruta raíz que redirige automáticamente a /Index */}

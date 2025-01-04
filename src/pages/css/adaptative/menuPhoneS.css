@@ -1,7 +1,8 @@
-@media (max-width: 430px) {
+@media (max-width: 450px) {
     body {
         overflow: scroll;
         overflow-x: hidden;
+        width: 95vw;
     }
     #sub-nav-barR {
         opacity: 0;
@@ -11,8 +12,8 @@
     }
     #nav-bar{
         top: 2%;
-        width: 400vw;
-        height: 40vh;
+        width: 97.8%;
+        height: 80vh;
     }
     #nav-bar li {
         opacity: 0;
@@ -25,10 +26,7 @@
         left: 76%;        
         transform: translate(-50%, -50%);
       }
-    .foodPhoto {
-        opacity: 0;
-      }
-    
+
     #content {
         background-color: #00000000;
         box-shadow: none;
@@ -44,5 +42,12 @@
         height: 100vh;
     }
 
+    .bg-images {
+        width: 300vw;
+    }
+
+    
+    
+    
 
   }

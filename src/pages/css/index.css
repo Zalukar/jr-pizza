@@ -52,9 +52,11 @@ body {
     overflow: hidden; /* Esto evitará que se haga scroll en esta sección específica */
   }
 
-  @media (max-width: 320px) {
+  @media (max-width: 450px) {
     .bg-images {
-      width: 400vw;
+      width: 350vw;
+      max-width: 1200px;
+      overflow: hidden;
       filter: blur(3px);
       
     }

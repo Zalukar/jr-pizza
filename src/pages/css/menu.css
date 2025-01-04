@@ -74,7 +74,7 @@
     overflow: hidden;
     position: relative;
     width: auto;
-    height: 60vh;
+    height: 50vh;
     border-radius: 0px 10px 10px 0px;
     box-shadow: 0px 0px 20px 14px rgb(0 0 0 / 35%);
     z-index: -1;
@@ -270,14 +270,53 @@
     margin-left: 8vw;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 450px) {
     .menuImg img {
-        margin-left: 100vw;
-        width: fit-content;
+        margin-left: 0vw;
+        height: 80vh;
+        
+    }
+
+    #entryMenuPhoto{
+        margin-left: 0vw;
+        height: 80vh;
+    }
+    #pizzaMenuPhoto {
+        height: 98vh;
+    }
+    #lasagnaMenuPhoto {
+        height: 85vh;
+    }
+    #panzerottiMenuPhoto {
+        height: 75vh;
+    }
+    #burguersMenuPhoto {
+        height: 105vh;
+    }
+    #others {
+        top: 1235vh;
+    }
+    #othersMenuPhoto {
+        height: 90vh;
+    }
+    #kidsMenuPhoto {
+        height: 70vh;
+    }
+    #drinksMenuPhoto {
+        height: 95vh;
     }
 
     .menuImg{
         height: 70vh;
+        width: auto;
+        align-items: center;
+        width: fit-content;
+    }
+    #menu {
+        padding-top: 1430vh;
+    }
+    #bg {
+        margin-top: 50vh;
     }
     
 }

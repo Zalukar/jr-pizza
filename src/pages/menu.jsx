@@ -1,5 +1,6 @@
 import './css/menu.css'
 import './css/adaptative/menuPhoneS.css'
+import './css/adaptative/menuLowFullscreenRes.css'
 
 import React from "react";
 import {useEffect} from 'react';
@@ -104,19 +105,19 @@ function Menu() {
 
     return (
         <div id="menu">
-        <ul id='sub-nav-barL'>
+        <ul id='sub-nav-barL' className='sub-nav-bar'>
             <li><Link to="entradas" smooth={true} duration={500} offset={-350} >Entradas</Link></li>
             <li><Link to="pizza" smooth={true} duration={500} offset={-250} >Pizza</Link></li>
             <li><Link to="pastas" smooth={true} duration={500} offset={-250} >Pastas</Link></li>
         </ul>
-        <ul id='sub-nav-barR'>
+        <ul id='sub-nav-barR'className='sub-nav-bar'>
             <li><Link to="burguers" smooth={true} duration={500} offset={-250}>Jburguers</Link></li>
             <li><Link to="others" smooth={true} duration={500} offset={-250}>Parrilla & Otros</Link></li>
             <li><Link to="drinks" smooth={true} duration={500} offset={-250}>Bebidas</Link></li>
         </ul>
         <div id='MenuImages'>
 
-            <div id='entrys' class='menuImg'>
+            <div id='entrys' class='menuImg' >
             <Element name='entradas'>
                 <div>
                     <img src={entryMenu} alt="" id='entryMenuPhoto' class="menuFoodPhoto"/>
