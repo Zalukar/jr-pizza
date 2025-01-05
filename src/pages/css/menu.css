@@ -320,3 +320,36 @@
     }
     
 }
+
+@media (min-width: 1020px) and (max-width: 1440px){
+    .menuImg {
+        flex-direction: column;
+        align-items: center;
+    }
+    #entrys {
+        margin-left: 8vw;
+    }
+    #others{
+        margin-left: 8vw;
+    }
+    #kidsMenu{
+        margin-left: 14vw;
+        top: 1320vh;
+        
+    }
+    #kidsMenu img {
+        width: 48vw;
+        height: auto;
+    }
+    #drinks{
+        top: 1410vh;
+        margin-left: 19vw;
+    }
+    #panzerotti{
+        margin-left: 10vw;
+    }
+    #drinks img {
+        width: 36vw;
+        height: auto;
+    }
+}

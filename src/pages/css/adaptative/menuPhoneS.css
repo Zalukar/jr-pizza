@@ -21,9 +21,9 @@
     #nav-logo {
         position: fixed;
         z-index: 1;
-        width: 130vw;
-        top: 7%;
-        left: 76%;        
+        width: 115vw;
+        top: 12%;
+        left: 70%;        
         transform: translate(-50%, -50%);
       }
 
