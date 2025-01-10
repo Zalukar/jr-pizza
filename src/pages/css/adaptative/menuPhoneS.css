@@ -11,12 +11,37 @@
         opacity: 0;
     }
     #nav-bar{
-        top: 2%;
         width: 97.8%;
         height: 80vh;
+        flex-direction: column;
+        top: 13%;
+        width: 97.8%;
+        height: 80vh;
+        font-size: 50px;
+        align-items: flex-end;
     }
-    #nav-bar li {
-        opacity: 0;
+
+    #nav-bar li{
+        margin-right: 30vw;
+    }
+
+
+    #menu-icon{
+        opacity: 1;
+        position: fixed;
+        font-size: 130px;
+        width: fit-content;
+        padding-left: 7vw;
+        padding-right: 7vw;
+        height: fit-content;
+        border-radius: 10px;
+        border-style: solid;
+        z-index: 1;
+        color: #ffffff;
+        top: 12vh;
+        left: 40vw;
+        background-color: #ffffff31;
+        transition: transform 0.5s ease-in-out;
     }
     #nav-logo {
         position: fixed;
