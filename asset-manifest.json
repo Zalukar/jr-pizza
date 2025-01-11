@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jr-pizza/static/css/main.6f5dc0ed.css",
-    "main.js": "/jr-pizza/static/js/main.55a635fc.js",
+    "main.css": "/jr-pizza/static/css/main.bf59fb15.css",
+    "main.js": "/jr-pizza/static/js/main.cf2189dd.js",
     "static/js/453.9cacdbf6.chunk.js": "/jr-pizza/static/js/453.9cacdbf6.chunk.js",
     "static/media/JrTeam.png": "/jr-pizza/static/media/JrTeam.6c4176508140d2f2f1c7.png",
     "static/media/others.png": "/jr-pizza/static/media/others.6d7bccbc6fbcaefef609.png",
@@ -28,12 +28,12 @@
     "static/media/patacon.jpeg": "/jr-pizza/static/media/patacon.cd5de0b4ef51dfb0fa47.jpeg",
     "static/media/jr-logo-bnw.png": "/jr-pizza/static/media/jr-logo-bnw.d6604f665d2cd66b6985.png",
     "index.html": "/jr-pizza/index.html",
-    "main.6f5dc0ed.css.map": "/jr-pizza/static/css/main.6f5dc0ed.css.map",
-    "main.55a635fc.js.map": "/jr-pizza/static/js/main.55a635fc.js.map",
+    "main.bf59fb15.css.map": "/jr-pizza/static/css/main.bf59fb15.css.map",
+    "main.cf2189dd.js.map": "/jr-pizza/static/js/main.cf2189dd.js.map",
     "453.9cacdbf6.chunk.js.map": "/jr-pizza/static/js/453.9cacdbf6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f5dc0ed.css",
-    "static/js/main.55a635fc.js"
+    "static/css/main.bf59fb15.css",
+    "static/js/main.cf2189dd.js"
   ]
 }
