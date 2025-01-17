@@ -1,17 +1,15 @@
 body {
-  background-color: rgba(53, 53, 53, 1);
-  font-family: 'Eras ITC';
+  background-color: rgb(0, 0, 0);
+  font-family: 'Eras ITC', 'Arial', sans-serif;
   overflow-x: hidden;
   overflow-y: auto;
 }
 
 #nav-bar {
   margin: auto;
-  align-items: center;
-  justify-content: space-evenly;
   color: rgba(255, 255, 255, 1);
   font-size: 30px;
-  font-weight: 650;
+  font-weight: 600;
   list-style: none;
 
   position: fixed;
@@ -21,11 +19,13 @@ body {
   z-index: 1;
 
   width: 98vw;
-  height: 15vh;
-  border: 3px solid #FFF;
-  border-radius: 30px;
+  height: 20vh;
+  border: 2px solid #FFF;
+  border-radius: 10px;
   display: flex;
   background: rgba(24, 24, 24, 1);
+  align-items: flex-end;
+  padding-left: 8vw;
 }
 
 
@@ -33,6 +33,9 @@ body {
   width: 10vw;
 }
 
+#nav-bar li {
+  margin: 3%;
+}
 a:hover , li:hover {
   text-shadow: 0px 8px 4px rgba(255, 255, 255, 0.507);
   -webkit-text-stroke-width: 1; 
@@ -46,15 +49,15 @@ a:link, a:visited, a:active {
 
 #nav-logo {
   position: fixed;
-  z-index: 1;
-  width: 18vw;
-  top: 18.5%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    z-index: 1;
+    width: 12vw;
+    top: 9%;
+    right: 6%;
+    transform: translate(-50%, -50%);
 }
 
 #content {
-  background-color: rgba(229, 229, 229, 0.40);
+  background-color: #181818e7;
   box-shadow: 0px 8px 8px 10px rgba(0, 0, 0, 0.25);
   width: 75vw;
   height: fit-content;
@@ -70,8 +73,31 @@ a:link, a:visited, a:active {
 
 
 @media (max-width: 450px) {
-  .hidden {
-    display: none !important;
+  #lastBgImg {
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  }
+  /* Aseguramos que la clase 'hidden' se aplica correctamente */
+.hidden {
+  display: none !important;
+}
+
+/* Aseguramos que cuando el menú está abierto, se mueva la nav-bar */
+.move-nav {
+  transform: translateY(14%);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* La clase 'open' controla la visibilidad del menú */
+#nav-bar.open {
+  display: flex;
+}
+#nav-bar{
+  transition: top 0.5s ease-in-out;
   }
 }
     

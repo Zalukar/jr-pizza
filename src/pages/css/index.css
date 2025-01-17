@@ -1,63 +1,202 @@
 body {
-    background-color: rgba(53, 53, 53, 1);
-    font-family: 'Eras ITC';
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
+  background-color: #0e0e0e;
+  font-family: 'Eras ITC', sans-serif;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
 
-  .bg-images {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 75vw;
-    margin: auto;
-    overflow-x: hidden;
-    overflow-y: auto;
-    z-index: -1;
-  }
+.bg-images {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100%; /* Ajustado para que ocupe todo el ancho sin exceder */
+  margin: auto;
+  overflow: hidden; /* Evita desbordamiento no deseado */
+  z-index: -1;
+}
 
 #index {
-    padding-top: 80vh;
-    padding-bottom: 10vh;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: center;
-    align-items: end;
-    margin-left: auto;
-    margin-right: auto;
-    width: 55vw;
-    height: 210vh;
-}
-
-.PorQueJr{
-    row-gap: 40vh;
-    grid-template-rows: auto auto;
-    width: fit-content;
-    height: fit-content;
-
-}
-
-.JrTeam{
-    grid-column: span 2;
-    width: 32vw;
+  padding-top: 80vh;
+  padding-bottom: 10vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+  align-items: end;
+  margin: auto; /* Centraliza el contenido */
+  width: 90%; /* Ajuste dinámico para móviles */
+  height: auto; /* Evita una altura fija que genere problemas */
 }
 
 #IndexColorLogo {
-    width: 25vw;
-    height: fit-content;
-    align-items: center;
+  margin-bottom: 10vh;
+  width: 80%; /* Asegura que se ajuste en pantallas pequeñas */
+  height: auto; /* Evita valores fijos */
+}
+
+#jrText {
+  background-color: rgba(250, 250, 250, 0.548);
+  padding: 3%;
+  padding-inline: 4%;
+  border-radius: 20px;
+  border-style: dashed;
+  border-color: #000000d5;
+  border-width: 3px;
+}
+
+.PorQueJr {
+  row-gap: 5rem; /* Usar rem para evitar problemas de escala en móviles */
+  grid-template-rows: auto auto;
+  width: 100%; /* Ajuste dinámico */
+  height: auto;
+}
+
+.JrTeam {
+  grid-column: span 2;
+  max-width: 75vw; /* Máximo para pantallas grandes */
+  border-radius: 5px;
+  border-radius: 20px;
+  border-width: 2px;
+  border-style: dashed;
+  border-color: #181818d5;
 }
 
 .no-scroll {
-    overflow: hidden; /* Esto evitará que se haga scroll en esta sección específica */
+  overflow: hidden; /* Esto evitará que se haga scroll en esta sección específica */
+}
+
+/* Media Queries para dispositivos pequeños */
+@media (max-width: 450px) {
+  .bg-images {
+      width: 100%; /* Asegura que no exceda el ancho del viewport */
+      filter: blur(3px);
+      height: auto;
   }
 
-  @media (max-width: 450px) {
-    .bg-images {
-      width: 350vw;
-      max-width: 1200px;
-      overflow: hidden;
-      filter: blur(3px);
-      
-    }
+  #index {
+      padding-top: 50vh; /* Reduce el espacio superior */
+      padding-bottom: 5vh; /* Reduce el espacio inferior */
+      grid-template-columns: 1fr; /* Una sola columna en móviles */
   }
+
+  #IndexColorLogo {
+      width: 60%; /* Más pequeño en móviles */
+      margin: auto;
+  }
+
+  .JrTeam {
+      width: 100%; /* Ocupa todo el ancho disponible */
+  }
+
+  .PorQueJr {
+      row-gap: 2rem; /* Espaciado más pequeño */
+  }
+
+  #jrText {
+      padding: 5%;
+      font-size: 0.9rem; /* Texto más pequeño para mejor ajuste */
+  }
+  #entrys{
+    top: 780vh;
+  }
+  #entryFoodPhoto{
+    overflow: visible;
+    width: 68vw;
+    height: auto;
+    border-radius: 5px;
+  }
+  #entrys img{
+    height: auto;
+  }
+  #pizza{
+    top: 868vh;
+  }
+  #pizzaFoodPhoto{
+    overflow: visible;
+    width: 68vw;
+    border-radius: 5px;
+  }
+  #pizza img{
+    height: auto;
+  }
+  #lasagna{
+    top: 992vh;
+  }
+  #lasagnaFoodPhoto{
+    overflow: visible;
+    width: 68vw;
+    border-radius: 5px;
+  }
+  #lasagna img{
+    height: auto;
+  }
+  #panzerotti {
+    top: 1104vh;
+  }
+  #panzerottiFoodPhoto{
+    overflow: visible;
+    width: 68vw;
+    border-radius: 5px;
+  }
+  #panzerotti img {
+    height: auto;
+  }
+  #burguers{
+    top: 1198vh;
+  }
+  #burguerFoodPhoto{
+    overflow:visible;
+    width: 68vw;
+    border-radius: 5px;
+  }
+  #burguers img {
+    height: auto;
+  }
+  #others{
+    top: 1312vh;
+  }
+  #othersFoodPhoto{
+    overflow: visible;
+    width: 68vw;
+    margin-left: 5%;
+    border-radius: 5px;
+  }
+  #othersMenuPhoto{
+    width: 88vw;
+  }
+  #othersMenuPhoto{
+    margin-left: 2%;
+  }
+  #others img {
+    height: auto;
+  }
+  #kidsMenu {
+    top: 1417vh;
+  }
+  #kidsFoodPhoto{
+    overflow: visible;
+    width: 65vw;
+    left: 0;
+    border-radius: 5px;
+  }
+  #kidsMenu img {
+    height: auto;
+  }
+  #drinks {
+    top: 1498vh;
+  }
+  #drinksMenuPhoto {
+    height: auto;
+  }
+  #drinksFoodPhoto {
+    height: auto;
+    left: 0;
+    width: 55vw;
+    overflow: visible;
+    border-radius: 5px;
+  }
+  .foodPhoto{
+    top: -20px;
+    left: 0;
+    width: 50vw;
+  }
+}

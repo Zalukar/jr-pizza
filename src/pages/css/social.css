@@ -1,34 +1,81 @@
 #social {
-    background-color: rgba(229, 229, 229, 0.40);
-    box-shadow: 0px 8px 8px 10px rgba(0, 0, 0, 0.25);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-content: center;
-    justify-items: center;
-    align-items: center;
-    padding-top: 14vh;
-    width: 75vw;
-    height: 100vh;
-    position: absolute;
-    inset: 0;
-    margin: auto;
-    z-index: 0;
-  }
+  background-color: rgba(229, 229, 229, 0.40);
+  box-shadow: 0px 8px 8px 10px rgba(0, 0, 0, 0.25);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  justify-items: center;
+  align-items: center;
+  padding-top: 14vh;
+  width: 90%; /* Ajuste dinámico */
+  max-width: 1200px; /* Ancho máximo en pantallas grandes */
+  height: auto; /* Altura dinámica */
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  z-index: 0;
+}
 
 #social img {
   margin: 2vw;
+  max-width: 100px; /* Limita el tamaño de las imágenes */
 }
 
-#bg-content{
-    margin-top: 6%;
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    padding-top: 2px;
-    border-radius: 20px;
+#bg-content {
+  margin-top: 6%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 20px;
 }
 
 #bg-content h2 {
   font-size: 28px;
   font-weight: 1000;
   color: #fff;
+}
+
+/* Media Queries para dispositivos pequeños */
+@media (max-width: 450px) {
+  #bg-content {
+      display: flex;
+      margin: 5vh auto; /* Ajusta los márgenes para centrar */
+      background-color: rgba(0, 0, 0, 0.719);
+      padding: 5%;
+      border-radius: 20px;
+      width: 90%; /* Ajuste dinámico */
+      flex-direction: column;
+      align-items: center;
+      border-style: dashed;
+      border-color: #ffffffd5;
+      border-width: 4px;
+  }
+
+  #bg-content iframe {
+      width: 100%; /* Ancho dinámico */
+      height: 50vh; /* Altura más manejable en móviles */
+  }
+
+  #socialMedia {
+      opacity: 0; /* Oculta el contenido si no es necesario en móviles */
+  }
+
+  #socialTxt h2 {
+      font-size: 24px; /* Reduce el tamaño de fuente */
+  }
+
+  #social {
+      display: flex;
+      background-color: transparent;
+      box-shadow: none;
+      flex-direction: column;
+      align-items: center;
+      width: 100%; /* Ajuste dinámico */
+      margin: auto;
+      padding: 2rem; /* Espaciado interno */
+  }
+
+  #social img {
+      margin: 1rem;
+      max-width: 80px; /* Tamaño más pequeño en móviles */
+  }
 }

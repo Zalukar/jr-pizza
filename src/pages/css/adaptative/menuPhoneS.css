@@ -1,78 +1,70 @@
 @media (max-width: 450px) {
     body {
-        overflow: scroll;
         overflow-x: hidden;
-        width: 95vw;
+        width: 100%;
     }
-    #sub-nav-barR {
-        opacity: 0;
-    }
+
+    #sub-nav-barR,
     #sub-nav-barL {
         opacity: 0;
     }
-    #nav-bar{
-        width: 97.8%;
-        height: 80vh;
+
+    #nav-bar {
+        width: 100%; /* Ajustado para evitar repetición innecesaria */
         flex-direction: column;
-        top: 13%;
-        width: 97.8%;
-        height: 80vh;
+        top: 3%;
+        height: 30vh;
         font-size: 50px;
         align-items: flex-end;
     }
 
-    #nav-bar li{
-        margin-right: 30vw;
+    #nav-bar li {
+        margin-right: 10vw; /* Reducido para evitar desbordamientos */
+        font-size: 20px;
     }
 
-
-    #menu-icon{
+    #menu-icon {
         opacity: 1;
         position: fixed;
-        font-size: 130px;
-        width: fit-content;
-        padding-left: 7vw;
-        padding-right: 7vw;
-        height: fit-content;
+        font-size: 40px;
+        padding: 1%;
+        padding-left: 3%;
         border-radius: 10px;
         border-style: solid;
         z-index: 1;
         color: #ffffff;
-        top: 12vh;
-        left: 40vw;
+        top: 5vh;
+        left: 8vw;
         background-color: #ffffff31;
         transition: transform 0.5s ease-in-out;
     }
+
     #nav-logo {
         position: fixed;
         z-index: 1;
-        width: 115vw;
-        top: 12%;
-        left: 70%;        
+        width: 42%; /* Ajustado a un tamaño relativo */
+        top: 9.5%;
+        left: 65%;        
         transform: translate(-50%, -50%);
-      }
+    }
 
     #content {
         background-color: #00000000;
         box-shadow: none;
-    }
-    
-    .menuFoodPhoto {
-        margin-left: 100vw;
-        height: 100vh;
+        overflow: hidden;
+        width: 100%;
     }
 
+    .menuFoodPhoto,
     .menuFoodPhotoStatic {
-        margin-left: 100vw;
-        height: 100vh;
+        margin-left: 7%; /* Eliminado el exceso de margen */
+        width: 85%;
+        height: auto; /* Opción para mantener el diseño */
     }
 
     .bg-images {
-        width: 300vw;
+        width: 100%;
+        object-fit: cover;
+        margin-left: 0; /* Asegura que no haya desbordamiento */
     }
-
-    
-    
-    
-
-  }
+}

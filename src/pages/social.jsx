@@ -12,10 +12,10 @@ const Social = () => {
       <div id="social">
         <ScrollToTop />
         <div id='bg-content'>
-        <div><h2>¡Ultimo reel publicado!</h2></div>
+        <div id='socialTxt'><h2>¡Ultimo reel publicado!</h2></div>
         <InstagramEmbed postUrl={postUrl} />
         </div>
-        <div>
+        <div id='socialMedia'>
         <p><strong style={{ fontSize: '1.5em', fontWeight: 'bold' }}>Nuestras redes sociales:</strong></p>
         <img src={fbLogo}></img>
         <img src={igLogo}></img>

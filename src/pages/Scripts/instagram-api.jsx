@@ -24,7 +24,7 @@ const InstagramEmbed = ({ postUrl, DarkMode = true }) => {
       data-instgrm-version="13">
       <div style={{ padding: '16px' }}>
         <a href={postUrl} target="_blank" 
-           style={{ color: '#FFF', fontFamily: 'Arial, sans-serif', fontSize: '14px', fontWeight: '400', lineHeight: '17px' }}>
+           style={{ color: '#000', fontFamily: 'Arial, sans-serif', fontSize: '14px', fontWeight: '400', lineHeight: '17px' }}>
           Ver publicación
         </a>
       </div>

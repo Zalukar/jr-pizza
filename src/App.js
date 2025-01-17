@@ -1,5 +1,5 @@
 import { BrowserRouter, Link, Routes, Route, Navigate } from 'react-router-dom';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 import './App.css';
 import './pages/css/adaptative/menuPhoneS.css';
@@ -21,6 +21,36 @@ import VisitUs from './pages/us';
 import Social from './pages/social';
 
 function App() {
+  useEffect(() => {
+    // Verificar si los elementos existen antes de agregarles el evento
+    const menuIcon = document.getElementById('menu-icon');
+    const navItems = document.querySelectorAll('#nav-bar li');
+    const navbar = document.getElementById('nav-bar');
+    const logo = document.getElementById('nav-logo');
+
+    // Asegurarse de que los elementos existan antes de intentar manipularlos
+    if (menuIcon && navItems.length > 0 && navbar && logo) {
+      menuIcon.addEventListener('click', () => {
+        // Alternar visibilidad del menú
+        navItems.forEach(item => {
+          item.classList.toggle('hidden'); // Alternar la clase 'hidden' en los items
+        });
+    
+        logo.classList.toggle('hidden'); // Alternar la clase 'hidden' en el logo
+    
+        // Cambiar el estilo de la nav-bar según la visibilidad
+        // Verificar si todos los items están ocultos (esto se puede hacer verificando el primer item)
+        const allHidden = Array.from(navItems).every(item => item.classList.contains('hidden'));
+        
+        if (allHidden) {
+          navbar.style.top = '3%'; // Restablecer la posición si todos los items están ocultos
+        } else {
+          navbar.classList.add('open');
+          navbar.style.top = '16%'; // Mover la navbar si algún item está visible
+        }
+      });
+    }
+  }, []);
   const [isMenuOpen, setIsMenuOpen] = useState(false); // Controla el estado del menú
 
   const toggleMenu = () => {
@@ -53,7 +83,7 @@ function App() {
           <img className="bg-images" src={lasagna} alt="Lasagna" />
           <img className="bg-images" src={panzerotti} alt="Panzerotti" />
           <img className="bg-images" src={costillas} alt="Costillas" />
-          <img className="bg-images" src={nuggets} alt="Nuggets" />
+          <img className="bg-images" id='lastBgImg' src={nuggets} alt="Nuggets" />
         </div>
         <div id="content">
           <Routes>

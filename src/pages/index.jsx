@@ -8,25 +8,26 @@ import jrTeamPhoto from './img/JrTeam.png'
 
 
 function useScrollRestriction() {
-  useEffect(() => {
-    const scrollLimit = window.innerHeight * 0.93; // scroll limit
+useEffect(() => {
+const scrollLimit = window.innerHeight * 0.93; // scroll limit
 
-    const handleScroll = () => {
-      if (window.scrollY > scrollLimit) {
-        window.scrollTo({
-          top: scrollLimit,
-          behavior: "auto",
-        });
-      }
-    };
+  const handleScroll = () => {
+ if (window.scrollY > scrollLimit) {
+     window.scrollTo({
+top: scrollLimit,
+  behavior: "auto",
+  });
+  }
+  };
 
-    window.addEventListener("scroll", handleScroll);
+   window.addEventListener("scroll", handleScroll);
 
-    return () => {
+  return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
 }
+
 function Index() { 
   useScrollRestriction();
     return (
@@ -35,9 +36,9 @@ function Index() {
             <li><Link to="section1" smooth={true} duration={500} offset={-360}>Por que JR?</Link></li>
             <li><Link to="section2" smooth={true} duration={500} offset={0}>Familia JR</Link></li>
           </ul>
-      <Element name="section1">
-          <div>
-              <h1 class="PorQueJR">Por que JR?</h1>
+          <Element name="section1" id="indexInf">
+          <div id="jrText">
+              <h1 class="PorQueJRheader">Por que JR?</h1>
               <p class="PorQueJR">
                 JR hace alucion al nombre de Jose Rojas<br/>
                 fundador de la sede principal pizza JR.<br/>
@@ -58,16 +59,18 @@ function Index() {
               </p>
             </div>
             </Element>
+            <div id="indexInf">
             <img id="IndexColorLogo" class="PorQueJR" src={jrLogoCol} />
+            </div>
             <Element name="section2">
             </Element>
-              <div class="JrTeam">
+              <div class="JrTeamdiv">
             
               <img class="JrTeam" src={jrTeamPhoto} />
             
-              <h1 class="JrTeam">Familia JR</h1>
+              <h1 class="JrTeamheader">Familia JR</h1>
               <br/>
-              <p class="JrTeam">
+              <p class="JrTeamText">
                 "Fue un año y medio de sacrificio y esfuerzo 
                 el cual solo se que sigue siendo un aprendizaje constante"<br/><br/>
 

@@ -1,63 +1,27 @@
-#sub-nav-barR {
-    margin: auto;
-    align-items: center;
-    justify-content: space-evenly;
-    color: rgba(255, 255, 255, 1);
-    font-size: 22px;
-    font-weight: 500;
-    list-style: none;
-    padding: 0;
-    position: fixed;
-    top: 16%;
-    left: 80%;
-    transform: translate(-50%, -50%);
-    z-index: 1;
-    width: 30vw;
-    height: 12vh;
-    border: 3px solid #FFF;
-    border-radius: 30px;
-    display: flex;
-    background: rgba(24, 24, 24, 1);
-}
-
 #sub-nav-barL {
     margin: auto;
     align-items: center;
     justify-content: space-evenly;
     color: rgba(255, 255, 255, 1);
-    font-size: 22px;
-    font-weight: 500;
+    font-size: 24px;
+    font-weight: 450;
     list-style: none;
     padding: 0;
-  
     position: fixed;
-    top: 16%;
-    left: 20%;
+    top: 18.5%;
+    left: 50%;
     transform: translate(-50%, -50%);
     z-index: 1;
-  
-    width: 30vw;
-    height: 12vh;
-    border: 3px solid #FFF;
-    border-radius: 30px;
+    width: 100vw;
+    height: 8vh;
+    border: 0.5px solid #c9c9c9;
+    border-radius: 0px;
     display: flex;
     background: rgba(24, 24, 24, 1);
 }
-  
-#sub-nav-barL li {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2%;
-}
-
-#sub-nav-barR li {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 2%;
-}
 
 #menu {
-    padding-top: 1500vh;
+    padding-top: 1510vh;
 }
 
 .menuImg {
@@ -236,7 +200,7 @@
 }
 
 #entrys {
-    top: 726vh;
+    top: 737vh;
     margin-left: 5vw;
 }
 
@@ -272,60 +236,26 @@
 
 @media (max-width: 450px) {
     .menuImg img {
-        margin-left: 0vw;
         height: 80vh;
         
     }
-
-    #entryMenuPhoto{
-        margin-left: 0vw;
-        height: 80vh;
-    }
-    #pizzaMenuPhoto {
-        height: 98vh;
-    }
-    #lasagnaMenuPhoto {
-        height: 85vh;
-    }
-    #panzerottiMenuPhoto {
-        height: 75vh;
-    }
-    #burguersMenuPhoto {
-        height: 105vh;
-    }
-    #others {
-        top: 1235vh;
-    }
-    #othersMenuPhoto {
-        height: 90vh;
-    }
-    #kidsMenuPhoto {
-        height: 70vh;
-    }
-    #drinksMenuPhoto {
-        height: 95vh;
-    }
-
     .menuImg{
-        height: 70vh;
         width: auto;
         align-items: center;
         width: fit-content;
-    }
+        margin: 20px;
+        flex-direction: column;
+        }
     #menu {
-        padding-top: 1430vh;
+        padding-top: 1610vh;
     }
     #bg {
-        margin-top: 50vh;
+        margin-top: 15vh;
     }
     
 }
 
 @media (min-width: 1020px) and (max-width: 1440px){
-    .menuImg {
-        flex-direction: column;
-        align-items: center;
-    }
     #entrys {
         margin-left: 8vw;
     }

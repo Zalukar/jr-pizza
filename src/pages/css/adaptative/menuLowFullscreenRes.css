@@ -1,18 +1,17 @@
 @media (min-width: 1020px) and (max-width: 1440px){
     body {
+        font-size: 12px;
         overflow: scroll;
         overflow-x: hidden;
     }
 
     #nav-bar li {
-        font-size: 25px;
+        font-size: 20px;
     }
     
     .sub-nav-bar li {
         font-size: 16px;
     }
 
-    .foodPhoto {
-        opacity: 0;
-    }
+
   }

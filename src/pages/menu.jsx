@@ -57,13 +57,6 @@ function Menu() {
             photo.style.transition = "all 0.5s ease";
             photo.style.position = "sticky";
             photo.style.zIndex = "1";
-    
-            // Cambiar estilo del logo
-            const LogoJr = document.querySelector("#nav-logo");
-            if (LogoJr) {
-                LogoJr.style.opacity = '0';
-                LogoJr.style.transition = "all 0.5s ease";
-            }
         };
     
         const handleMouseOut = (photo) => {
@@ -74,13 +67,6 @@ function Menu() {
             photo.style.zIndex = "0";
             photo.style.boxShadow = '35px 0px 20px 10px rgb(0 0 0 / 35%)';
             photo.style.transition = "all 0.8s ease";
-    
-            // Restaurar estilo del logo
-            const LogoJr = document.querySelector("#nav-logo");
-            if (LogoJr) {
-                LogoJr.style.opacity = '1';
-                LogoJr.style.transition = "all 0.5s ease";
-            }
         };
     
         // Seleccionar todas las fotos
@@ -109,8 +95,6 @@ function Menu() {
             <li><Link to="entradas" smooth={true} duration={500} offset={-350} >Entradas</Link></li>
             <li><Link to="pizza" smooth={true} duration={500} offset={-250} >Pizza</Link></li>
             <li><Link to="pastas" smooth={true} duration={500} offset={-250} >Pastas</Link></li>
-        </ul>
-        <ul id='sub-nav-barR'className='sub-nav-bar'>
             <li><Link to="burguers" smooth={true} duration={500} offset={-250}>Jburguers</Link></li>
             <li><Link to="others" smooth={true} duration={500} offset={-250}>Parrilla & Otros</Link></li>
             <li><Link to="drinks" smooth={true} duration={500} offset={-250}>Bebidas</Link></li>
@@ -139,7 +123,7 @@ function Menu() {
             <div id='lasagna' class='menuImg'>
             <Element name='pastas'>
                 <div>
-                <img src={lasagnaMenu} alt="" class="menuFoodPhoto" id='lasagnaMenuPhoto'/>
+                <img src={lasagnaMenu} alt="" class="menuFoodPhotoStatic" id='lasagnaMenuPhoto'/>
                 </div>
             </Element>
                 <img src={lasagna} id='lasagnaFoodPhoto' className='foodPhoto'></img>
@@ -148,7 +132,7 @@ function Menu() {
 
             <div id='panzerotti' class='menuImg'>
                 <Element>
-                <img src={panzerottiMenu} alt="" id='panzerottiMenuPhoto' class="menuFoodPhoto"/>
+                <img src={panzerottiMenu} alt="" id='panzerottiMenuPhoto' class="menuFoodPhotoStatic"/>
                 </Element>
                 <img src={panzerotti} id='panzerottiFoodPhoto' className='foodPhoto'></img>
             </div>
@@ -191,7 +175,6 @@ function Menu() {
             <div id='drinks' class='menuImg'>
             <Element name='drinks'>
                 <img src={drinksMenu} alt="" id='drinksMenuPhoto' class="menuFoodPhotoStatic"/>
-                <p class='zoomPromp'></p> 
             </Element>
                 <img src={drinks} id='drinksFoodPhoto' className='foodPhoto'></img>
             </div>
