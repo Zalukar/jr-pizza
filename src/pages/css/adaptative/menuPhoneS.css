@@ -1,4 +1,12 @@
 @media (max-width: 450px) {
+    #pizzaMenuPhoto{
+        margin-left: 2vw;
+    }
+    #burguersMenuPhoto{
+        margin-left: 2.5vw;
+    }
+    
+
     body {
         overflow-x: hidden;
         width: 100%;
@@ -8,7 +16,6 @@
     #sub-nav-barL {
         opacity: 0;
     }
-
     #nav-bar {
         width: 100%; /* Ajustado para evitar repetición innecesaria */
         flex-direction: column;

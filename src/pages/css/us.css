@@ -9,7 +9,7 @@
 }
 
 #index {
-    padding-top: 50vh;
+    padding-top: 125vh;
     padding-bottom: 30vh;
 }
 
@@ -26,9 +26,16 @@
     height: auto; /* Altura dinámica */
     margin: 5rem auto;
 }
-
+#jrText{
+    width: 52vw;
+    margin-left: 5vw;
+    position: static;
+    margin-top: 15vh;
+    transform: translate(10px, 140px);
+}
 .JrTeamdiv {
-    position: relative; /* Evita problemas con `absolute` */
+    width: 40%;
+    position: relative;
     background-color: rgba(250, 250, 250, 0.548);
     padding: 3%;
     border-radius: 20px;
@@ -37,10 +44,41 @@
     border-width: 3px;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    transform: translate(-180%, 5%);
     margin: 2rem auto;
+    margin-top: 45vh;
 }
 
+
+#IndexColorLogo {
+    width: 25%;
+    position: static;
+    height: auto;
+    margin: 2rem auto;
+    z-index: 2;
+    transform: translate(-105%, 25%);    
+    padding: 1%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 100%;
+}
+#bg-map iframe {
+    width: 100%;
+    height: 50vh; /* Ajuste dinámico */
+    
+}
+
+#bg-map {
+    margin-top: 10vh;
+    color: #ffffff;
+    background-color: #000000ad;
+    outline-style: dashed;
+    outline-width: 2px;
+}
+#Us {
+    background-color: #0000;
+    box-shadow: none;
+}
 /* Media Queries para dispositivos pequeños */
 @media (max-width: 450px) {
     #index {
@@ -66,6 +104,8 @@
         padding-top: 1vh;
         padding-bottom: 2vh;
         margin-bottom: 12vh;
+        align-items: center;
+        transform: translate(-0%, -29%);
     }
 
     .JrTeamheader{
@@ -76,7 +116,7 @@
     .JrTeamText {
         margin: 0;
     }
-
+    
     #IndexColorLogo {
         width: 62%;
         left: 20%;
@@ -84,7 +124,7 @@
         height: auto;
         margin: 2rem auto;
         z-index: 2;
-        transform: translate(1%, -78.5%);
+        transform: translate(1%, 4.5%)
     }
 
     #jrText {

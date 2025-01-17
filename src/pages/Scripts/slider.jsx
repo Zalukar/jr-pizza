@@ -1,0 +1,70 @@
+import React, { useState, useEffect } from "react";
+import "./Slider.css";
+
+const Slider = ({ images, className, interval = 3000 }) => {
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [animating, setAnimating] = useState(false); // Estado para controlar la animación
+  const [intervalId, setIntervalId] = useState(null); // Guardamos el ID del intervalo para limpiarlo
+
+  // Función para cambiar a la siguiente imagen
+  const nextSlide = () => {
+    setAnimating(true);
+    setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+  };
+
+  // Función para cambiar a la imagen anterior
+  const prevSlide = () => {
+    setAnimating(true);
+    setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
+  };
+
+  // Restablece el intervalo cada vez que el currentIndex cambia
+  useEffect(() => {
+    // Limpiar el intervalo anterior antes de establecer uno nuevo
+    if (intervalId) {
+      clearInterval(intervalId);
+    }
+
+    // Establecer el nuevo intervalo
+    const newIntervalId = setInterval(nextSlide, interval);
+    setIntervalId(newIntervalId);
+
+    return () => clearInterval(newIntervalId); // Limpiar el intervalo cuando el componente se desmonte
+  }, [currentIndex, interval]); // Dependencia de currentIndex para reiniciar el intervalo
+
+  // Se ejecuta después de que se haya cambiado el índice
+  useEffect(() => {
+    if (animating) {
+      const timeout = setTimeout(() => {
+        setAnimating(false);
+      }, 1000); // Duración de la animación
+      return () => clearTimeout(timeout);
+    }
+  }, [animating]);
+
+  return (
+    <div className={`slider-container ${className}`}>
+      <button className="slider-button" id="slider-button-prev" onClick={prevSlide}>
+        ◀
+      </button>
+      <div
+        className={`slider-content ${animating ? "animating" : ""}`}
+        style={{ transform: `translateX(-${currentIndex * 100}%)` }}
+      >
+        {images.map((image, index) => (
+          <img
+            key={index}
+            src={image}
+            alt={`Slide ${index}`}
+            className="slider-image"
+          />
+        ))}
+      </div>
+      <button className="slider-button" id="slider-button-next" onClick={nextSlide}>
+        ▶
+      </button>
+    </div>
+  );
+};
+
+export default Slider;

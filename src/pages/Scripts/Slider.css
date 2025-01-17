@@ -1,0 +1,112 @@
+/* Slider.css */
+.slider-container {
+    z-index: 0;
+    position: relative;
+    width: 58%;
+    height: 100%;
+    overflow: hidden;
+    border-style: solid;
+    border-color: rgba(255, 255, 255, 0.767);
+    border-width: 1.5px;
+    border-radius: 5px;
+  }
+  
+  .slider-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    transition: transform 1s ease-in-out; /* Animación para el deslizamiento */
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: auto;
+  }
+  
+  .slider-button {
+    position: absolute;
+    top: 50%;
+    height: 102%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    font-size: 2rem;
+    cursor: pointer;
+    z-index: 1;
+    transition: font-size 0.3s ease, color 0.3s ease;
+  }
+
+  .slider-pizza{
+    left: 5vw;
+  }
+  
+  .slider-burguers{
+    left: 4vw;
+  }
+  
+  .slider-parrilla{
+    left: 0.3vw;
+  }
+  .slider-kids{
+    right: 4.1vw;
+  }
+  
+  #slider-button-prev {
+    left: -1px;
+    padding-left: 2%;
+    position: absolute;
+    padding-right: 6%;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0), black);
+  }
+  
+  #slider-button-next {
+    right: 0px;
+    padding-left: 6%;
+    position: absolute;
+    padding-right: 2%;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0), black);
+  }
+  .slider-button:hover {
+    font-size: 3rem;
+    color: rgb(231,157,0,255);
+    transition: font-size 0.3s ease, color 0.3s ease;
+  }
+  @media (max-width: 450px) {
+    .slider-button{
+      font-size: 1.3rem;
+    }
+    .slider-container{
+      border-color: rgba(255, 255, 255, 0.308);
+      width: 80%;
+      top: -2.5vh;
+    }
+    .slider-pizza{
+      left: 1vw;
+    }
+    .slider-burguers{
+    left: 1vw;
+    }
+    .slider-parrilla{
+      left: 1vw;
+    }
+  }
+
+  @media (min-width: 1000px) and (max-width: 1440px){
+    .slider-container{
+        right: 4vw;
+    }
+    .slider-pizza{
+        left: -4vw;
+      }
+    .slider-burguers{
+        left: -5vw;
+    }
+    .slider-parrilla{
+        left: -5vw;
+    }
+    .slider-kids{
+        left: -5vw;
+    }
+  }
