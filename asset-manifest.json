@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/jr-pizza/static/css/main.40c12f99.css",
-    "main.js": "/jr-pizza/static/js/main.ba78d37d.js",
+    "main.css": "/jr-pizza/static/css/main.8ccde3cf.css",
+    "main.js": "/jr-pizza/static/js/main.f97e20d8.js",
     "static/js/453.9cacdbf6.chunk.js": "/jr-pizza/static/js/453.9cacdbf6.chunk.js",
     "static/media/JrTeam.png": "/jr-pizza/static/media/JrTeam.6c4176508140d2f2f1c7.png",
     "static/media/others.png": "/jr-pizza/static/media/others.6d7bccbc6fbcaefef609.png",
@@ -50,13 +50,14 @@
     "static/media/patacon.jpeg": "/jr-pizza/static/media/patacon.cd5de0b4ef51dfb0fa47.jpeg",
     "static/media/hamburguesa1.jpeg": "/jr-pizza/static/media/hamburguesa1.d9534632a80769e91ae8.jpeg",
     "static/media/jr-logo-bnw.png": "/jr-pizza/static/media/jr-logo-bnw.d6604f665d2cd66b6985.png",
+    "static/media/whatsapplogo.png": "/jr-pizza/static/media/whatsapplogo.f90a760bd3bb32b619c2.png",
     "index.html": "/jr-pizza/index.html",
-    "main.40c12f99.css.map": "/jr-pizza/static/css/main.40c12f99.css.map",
-    "main.ba78d37d.js.map": "/jr-pizza/static/js/main.ba78d37d.js.map",
+    "main.8ccde3cf.css.map": "/jr-pizza/static/css/main.8ccde3cf.css.map",
+    "main.f97e20d8.js.map": "/jr-pizza/static/js/main.f97e20d8.js.map",
     "453.9cacdbf6.chunk.js.map": "/jr-pizza/static/js/453.9cacdbf6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.40c12f99.css",
-    "static/js/main.ba78d37d.js"
+    "static/css/main.8ccde3cf.css",
+    "static/js/main.f97e20d8.js"
   ]
 }
