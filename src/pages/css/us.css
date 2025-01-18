@@ -1,6 +1,6 @@
 #bg-map {
     margin: 2rem auto;
-    background-color: rgb(0 0 0 / 80%);
+    background-color: rgba(219, 219, 219, 0.548);
     padding: 20px;
     border-radius: 20px;
     width: 90%;
@@ -9,8 +9,8 @@
 }
 
 #index {
-    padding-top: 125vh;
-    padding-bottom: 30vh;
+    padding-top: 111vh;
+    padding-bottom: 8vh;
 }
 
 #Us {
@@ -27,26 +27,36 @@
     margin: 5rem auto;
 }
 #jrText{
+    color: #000000ef;
     width: 52vw;
     margin-left: 5vw;
     position: static;
     margin-top: 15vh;
-    transform: translate(10px, 140px);
+    transform: translate(10px, 10px);
+    font-size: 1.2rem;
+    border-style: solid;
+    background-color: rgba(219, 219, 219, 0.548);
+    border-color: rgb(172 120 8 / 72%);
+    box-shadow: 0px 5px 8px 14px rgb(172 120 8 / 15%);
 }
 .JrTeamdiv {
+    font-size: 1.05rem;
+    color: #000000ef;
     width: 40%;
     position: relative;
-    background-color: rgba(250, 250, 250, 0.548);
+    background-color: rgba(219, 219, 219, 0.548);
     padding: 3%;
-    border-radius: 20px;
-    border-style: dashed;
-    border-color: #000000d5;
-    border-width: 3px;
+    border-radius: 10px;
+    border-style: solid;
+    border-color: rgb(231,157,0,255);
+    border-width: 2px;
     display: flex;
     flex-direction: column;
     transform: translate(-180%, 5%);
     margin: 2rem auto;
-    margin-top: 45vh;
+    margin-top: 24vh;
+    box-shadow: 0px 5px 8px 14px rgb(172 120 8 / 15%);
+
 }
 
 
@@ -56,7 +66,7 @@
     height: auto;
     margin: 2rem auto;
     z-index: 2;
-    transform: translate(-105%, 25%);    
+    transform: translate(-97%, -30%);
     padding: 1%;
     padding-top: 2%;
     padding-bottom: 2%;
@@ -65,15 +75,19 @@
 #bg-map iframe {
     width: 100%;
     height: 50vh; /* Ajuste dinámico */
+    margin: auto;
     
 }
 
 #bg-map {
+    font-size: 1.1rem;
     margin-top: 10vh;
-    color: #ffffff;
-    background-color: #000000ad;
-    outline-style: dashed;
-    outline-width: 2px;
+    color: #000000ef;
+    background-color: rgba(219, 219, 219, 0.548);
+    border-style: solid;
+    border-width: 2px;
+    border-color: rgba(196, 140, 22, 0.72);
+    box-shadow: 0px 5px 8px 14px rgb(172 120 8 / 15%);
 }
 #Us {
     background-color: #0000;
@@ -118,13 +132,13 @@
     }
     
     #IndexColorLogo {
-        width: 62%;
+        width: 45%;
         left: 20%;
         position: absolute;
         height: auto;
         margin: 2rem auto;
         z-index: 2;
-        transform: translate(1%, 4.5%)
+        transform: translate(19%, -89.5%);
     }
 
     #jrText {
@@ -132,7 +146,7 @@
         padding: 2%;
         background-color: rgb(255 255 255 / 55%);
         margin: 5vh auto;
-        margin-top: 88vh;
+        margin-top: 108vh;
         padding-bottom: 5vh;
     }
 
@@ -140,7 +154,13 @@
         font-size: 2rem;
     }
 
+    .PorQueJR{
+        margin-top: 3%;
+        font-size: 1rem
+    }
+
     #bg-map {
+        color: #000000ef;
         margin-top: 22vh;
         width: 75%;
         max-width: 600px;
@@ -152,10 +172,10 @@
     #bg-map iframe {
         width: 100%;
         height: 42vh; /* Ajuste dinámico */
+        margin: auto;
     }
 
     #mapTxt {
-        color: #fff;
         font-size: 1.3rem;
         text-align: center;
     }
@@ -173,5 +193,22 @@
 @media (min-width: 420px) and (max-width: 450px) {
     #index {
         margin-top: 80vh;
+    }
+}
+
+@media (min-width: 900px) and (max-width: 1440px){
+    #jrText{    
+        font-size: 1.1rem;
+    }
+    #IndexColorLogo{
+        transform: translate(-90%, -170%);
+    }
+    .JrTeam {
+        height: 50vh;
+    }
+    .JrTeamdiv{
+        height: 74vh;
+        width: 60%;
+        transform: translate(-130%, -3%);
     }
 }

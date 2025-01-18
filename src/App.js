@@ -5,6 +5,7 @@ import './App.css';
 import './pages/css/adaptative/menuPhoneS.css';
 import './pages/css/adaptative/menuLowFullscreenRes.css';
 
+import whaLogo from './pages/img/whatsapplogo.png';
 import jrLogo from './pages/img/jr-logo-bnw.png';
 import Bgimg1 from './pages/img/Burguers/Burguer1.png';
 import Clbhs1 from './pages/img/Others/Clubhouse1.jpeg';
@@ -59,6 +60,14 @@ function App() {
 
   return (
     <BrowserRouter>
+      <div id='hovercontainer'>
+        <a href='https://wa.me/573133440478'>
+          <div id='whatsapp'>
+          <p>Pide a nuestro whatsapp!!</p>
+          <img src={whaLogo}></img>
+        </div>
+        </a>
+      </div>
       <div className="App">
         <div id="menus">
           <ul id="nav-bar">
@@ -96,7 +105,7 @@ function App() {
             <Route path="/Social" element={<Social />} />
           </Routes>
         </div>
-      </div>
+        </div>
     </BrowserRouter>
   );
 }

@@ -67,7 +67,7 @@ const slidersData = {
     pizza: [pizza1, pizza2],
     burguers: [Burguer1, hamburguesa1, hamburguesa2, hamburguesa3, hamburguesa4, hamburguesa5, hamburguesa6, hamburguesa7, hamburguesa8, hamburguesa9,],
     parrilla: [parrillada, churrasco, costillasBbq, pechugaGratinada, ClubHouse1, choripan, perro1, patacon1, mazorcada1, mazorcada2, mazorcada4, chorizoConArepa, arepaRellena, mazorcada3],
-    kids: [ salchiKids, nuggets, salchiKids],
+    kids: [ salchiKids, nuggets                                                                                              ],
   };
 
 function Menu() {
