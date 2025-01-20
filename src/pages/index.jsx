@@ -60,13 +60,13 @@ function Index() {
             </div>
             </Element>
             <div id="indexInf">
-            <img id="IndexColorLogo" class="PorQueJR" src={jrLogoCol} />
+            <img id="IndexColorLogo" class="PorQueJR" alt="Foto a color del logo" src={jrLogoCol} />
             </div>
             <Element name="section2">
             </Element>
               <div class="JrTeamdiv">
             
-              <img class="JrTeam" src={jrTeamPhoto} />
+              <img class="JrTeam" src={jrTeamPhoto} alt="foto del equipo Jr"/>
             
               <h1 class="JrTeamheader">Familia JR</h1>
               <br/>

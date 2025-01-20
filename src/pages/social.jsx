@@ -1,8 +1,6 @@
 import React from 'react';
 import './css/social.css';
-import InstagramEmbed from './Scripts/instagram-api'; 
-import fbLogo from './img/facebookLogo.png'
-import igLogo from './img/InstagramLogo.png'
+import InstagramEmbed from './Scripts/instagram-api';
 import ScrollToTop from './Scripts/toTop';
 
 const Social = () => {

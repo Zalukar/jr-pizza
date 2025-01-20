@@ -64,7 +64,7 @@ function App() {
         <a href='https://wa.me/573133440478'>
           <div id='whatsapp'>
           <p>Pide a nuestro whatsapp!!</p>
-          <img src={whaLogo}></img>
+          <img src={whaLogo} alt='Logo de WhatsApp'></img>
         </div>
         </a>
       </div>
@@ -83,7 +83,7 @@ function App() {
             id="nav-logo" 
             src={jrLogo} 
             className={isMenuOpen ? 'hidden' : ''}  // Aplica la clase hidden al logo solo cuando el menú está abierto
-            alt="Logo" 
+            alt="Logo blanco fijo en la barra del menu" 
           />
           <img className="bg-images" src={Bgimg1} alt="Burguer 1" />
           <img className="bg-images" src={Clbhs1} alt="Clubhouse 1" />
