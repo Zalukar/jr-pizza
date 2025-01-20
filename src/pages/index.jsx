@@ -1,7 +1,6 @@
 import React from "react";
 import { useEffect } from "react";
 
-import { Link, Element } from 'react-scroll';
 import './css/index.css'
 import jrLogoCol from './img/jr-logo-color.png'
 import jrTeamPhoto from './img/JrTeam.png'
