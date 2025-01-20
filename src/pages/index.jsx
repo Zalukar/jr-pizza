@@ -32,10 +32,9 @@ function Index() {
     return (
         <div id="index">
           <ul id='sub-nav-barL'>
-            <li><Link to="section1" smooth={true} duration={500} offset={-360}>Por que JR?</Link></li>
-            <li><Link to="section2" smooth={true} duration={500} offset={0}>Familia JR</Link></li>
+            <li>Por que JR?</li>
+            <li>Familia JR</li>
           </ul>
-          <Element name="section1" id="indexInf">
           <div id="jrText">
               <h1 class="PorQueJRheader">Por que JR?</h1>
               <p class="PorQueJR">
@@ -57,12 +56,9 @@ function Index() {
                 “fue complejo pero no dejaremos atras el aprendizaje”.<br/>
               </p>
             </div>
-            </Element>
             <div id="indexInf">
             <img id="IndexColorLogo" class="PorQueJR" alt="Foto a color del logo" src={jrLogoCol} />
             </div>
-            <Element name="section2">
-            </Element>
               <div class="JrTeamdiv">
             
               <img class="JrTeam" src={jrTeamPhoto} alt="foto del equipo Jr"/>
