@@ -1,6 +1,5 @@
 import './css/us.css'
 import React from "react";
-import { Link, Element } from 'react-scroll';
 import ScrollToTop from './Scripts/toTop';
 
 function Us() {

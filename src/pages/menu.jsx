@@ -6,7 +6,6 @@ import Slider from'./Scripts/slider.jsx'
 
 import React from "react";
 import {useEffect} from 'react';
-import { Link, Element } from 'react-scroll';
 
 import entryMenu from "./img/MenuPhotos/entrys.png"
 
@@ -126,73 +125,73 @@ function Menu() {
     return (
         <div id="menu">
         <ul id='sub-nav-barL' className='sub-nav-bar'>
-            <li><Link to="entradas" smooth={true} duration={500} offset={-350} >Entradas</Link></li>
-            <li><Link to="pizza" smooth={true} duration={500} offset={-250} >Pizza</Link></li>
-            <li><Link to="pastas" smooth={true} duration={500} offset={-250} >Pastas</Link></li>
-            <li><Link to="burguers" smooth={true} duration={500} offset={-250}>Jburguers</Link></li>
-            <li><Link to="others" smooth={true} duration={500} offset={-250}>Parrilla & Otros</Link></li>
-            <li><Link to="drinks" smooth={true} duration={500} offset={-250}>Bebidas</Link></li>
+            <li>Entradas</li>
+            <li>Pizza</li>
+            <li>Pastas</li>
+            <li>Jburguers</li>
+            <li>Parrilla & Otros</li>
+            <li>Bebidas</li>
         </ul>
         <div id='MenuImages'>
                 <div id='entrys' className='menuImg'>
-                    <Element name='entradas'>
+
                         <div>
                             <img src={entryMenu} alt="Menu de entradas" id='entryMenuPhoto' className="menuFoodPhoto" />
                         </div>
-                    </Element>
+
                     <Slider className="slider-entradas" images={slidersData["entradas"]} />
                 </div>
 
                 <div id="pizza" className='menuImg'>
-                    <Element name='pizza'>
+
                         <div>
                             <img src={pizzaMenu} alt="Menu de pizzas" id='pizzaMenuPhoto' className="menuFoodPhoto" />
                         </div>
-                    </Element>
+
                     <Slider className="slider-pizza" images={slidersData["pizza"]} />
                 </div>
 
                 <div id='lasagna' className='menuImg'>
-                    <Element name='pastas'>
+
                         <div>
                             <img src={lasagnaMenu} alt="Menu de Lasagña" className="menuFoodPhotoStatic" id='lasagnaMenuPhoto' />
                         </div>
-                    </Element>
+
                     <img src={lasagna} id='lasagnaFoodPhoto' alt='foto de lasaña'className='foodPhoto' />
                 </div>
 
                 <div id='panzerotti' className='menuImg'>
-                    <Element>
+
                         <img src={panzerottiMenu} alt="Precios Panzerottis" id='panzerottiMenuPhoto' className="menuFoodPhotoStatic" />
-                    </Element>
+
                     <img src={panzerotti} id='panzerottiFoodPhoto' alt='foto de panzerotti' className='foodPhoto' />
                 </div>
 
                 <div id='burguers' className='menuImg'>
-                    <Element name='burguers'>
+
                         <img src={burguerMenu} alt="menu de hamburguesas" id='burguersMenuPhoto' className="menuFoodPhoto" />
-                    </Element>
+
                     <Slider className="slider-burguers" alt='foto de menu de hamburguesas' images={slidersData["burguers"]} />
                 </div>
 
                 <div id='others' className='menuImg'>
-                    <Element name='others'>
+
                         <img src={othersMenu} alt="" id='Foto menu Otros' className="menuFoodPhoto" />
-                    </Element>
+
                     <Slider className="slider-parrilla" images={slidersData["parrilla"]} />
                 </div>
 
                 <div id='kidsMenu' className='menuImg'>
-                    <Element>
+
                         <img src={kidsMenu} alt="Foto menu Infantil" id='kidsMenuPhoto' className="menuFoodPhotoStatic" />
-                    </Element>
+
                     <Slider className="slider-kids" images={slidersData["kids"]} />
                 </div>
 
                 <div id='drinks' className='menuImg'>
-                    <Element name='drinks'>
+
                         <img src={drinksMenu} alt="Foto menu de bebidas" id='drinksMenuPhoto' className="menuFoodPhotoStatic" />
-                    </Element>
+
                     <img src={drinks} id='drinksFoodPhoto' className='foodPhoto' />
                 </div>
             </div>
