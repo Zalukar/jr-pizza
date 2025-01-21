@@ -28,7 +28,8 @@ const Slider = ({ images, className, interval = 3000 }) => {
     setIntervalId(newIntervalId);
 
     return () => clearInterval(newIntervalId); // Limpiar el intervalo cuando el componente se desmonte
-  }, [currentIndex, interval, nextSlide]); // Dependencias ajustadas
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [currentIndex, interval]); // Añadir intervalId y nextSlide a las dependencias
 
   // Se ejecuta después de que se haya cambiado el índice
   useEffect(() => {
@@ -53,7 +54,7 @@ const Slider = ({ images, className, interval = 3000 }) => {
           <img
             key={index}
             src={image}
-            alt={`Slide ${index}`}  // Agregar el atributo alt
+            alt={`Slide ${index}`}
             className="slider-image"
           />
         ))}
