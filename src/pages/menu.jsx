@@ -175,7 +175,7 @@ function Menu() {
 
                 <div id='others' className='menuImg'>
 
-                        <img src={othersMenu} alt="" id='Foto menu Otros' className="menuFoodPhoto" />
+                        <img src={othersMenu} alt="" id='othersMenuPhoto' className="menuFoodPhoto" />
 
                     <Slider className="slider-parrilla" images={slidersData["parrilla"]} />
                 </div>
