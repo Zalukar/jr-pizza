@@ -1,5 +1,5 @@
 {
-  "homepage": "https://zalukar.github.io/jr-pizza",
+  "homepage": "https://www.mipagina.com",
   "name": "jr-pizza",
   "version": "0.1.0",
   "private": true,
@@ -13,8 +13,7 @@
     "react-router-dom": "^6.28.0",
     "web-vitals": "^2.1.4"
   },
-  "homepage": "https://splendid-cactus-998673.netlify.app/",
-
+  
   "scripts": {
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
