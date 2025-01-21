@@ -23,8 +23,7 @@ const InstagramEmbed = ({ postUrl, DarkMode = true }) => {
       data-instgrm-permalink={postUrl} 
       data-instgrm-version="13">
       <div style={{ padding: '16px' }}>
-        <a href={postUrl} target="_blank" 
-           style={{ color: '#000', fontFamily: 'Arial, sans-serif', fontSize: '14px', fontWeight: '400', lineHeight: '17px', margin: 'Auto' }}>
+        <a href={postUrl} target="_blank" rel="noreferrer" style={{ color: '#000', fontFamily: 'Arial, sans-serif', fontSize: '14px', fontWeight: '400', lineHeight: '17px', margin: 'Auto' }}>
           Ver publicación
         </a>
       </div>
