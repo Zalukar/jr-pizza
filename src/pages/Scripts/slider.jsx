@@ -24,13 +24,14 @@ const Slider = ({ images, className, interval = 3000 }) => {
     if (intervalId) {
       clearInterval(intervalId);
     }
-
+  
     // Establecer el nuevo intervalo
     const newIntervalId = setInterval(nextSlide, interval);
     setIntervalId(newIntervalId);
-
+  
     return () => clearInterval(newIntervalId); // Limpiar el intervalo cuando el componente se desmonte
-  }, [currentIndex, interval]); // Dependencia de currentIndex para reiniciar el intervalo
+  }, [currentIndex, interval, intervalId, nextSlide]); // Agregar intervalId y nextSlide como dependencias
+  
 
   // Se ejecuta después de que se haya cambiado el índice
   useEffect(() => {
