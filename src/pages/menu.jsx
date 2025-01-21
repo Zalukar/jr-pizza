@@ -191,7 +191,7 @@ function Menu() {
 
                         <img src={drinksMenu} alt="Foto menu de bebidas" id='drinksMenuPhoto' className="menuFoodPhotoStatic" />
 
-                    <img src={drinks} id='drinksFoodPhoto' className='foodPhoto' />
+                    <img src={drinks} alt='foto bebidas' id='drinksFoodPhoto' className='foodPhoto' />
                 </div>
             </div>
         </div>
