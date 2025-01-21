@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import "./Slider.css";
 
 const Slider = ({ images, className, interval = 3000 }) => {
@@ -7,10 +7,10 @@ const Slider = ({ images, className, interval = 3000 }) => {
   const [intervalId, setIntervalId] = useState(null); // Guardamos el ID del intervalo para limpiarlo
 
   // Función para cambiar a la siguiente imagen
-  const nextSlide = () => {
+  const nextSlide = useCallback(() => {
     setAnimating(true);
     setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-  };
+  }, [images.length]); // Dependencia de images.length
 
   // Función para cambiar a la imagen anterior
   const prevSlide = () => {
@@ -28,10 +28,8 @@ const Slider = ({ images, className, interval = 3000 }) => {
     setIntervalId(newIntervalId);
   
     return () => clearInterval(newIntervalId); // Limpiar el intervalo cuando el componente se desmonte
-  }, [currentIndex, interval, intervalId, nextSlide]); // Añadir intervalId y nextSlide a las dependencias
+  }, [currentIndex, interval, nextSlide]); // Se eliminó intervalId de las dependencias
   
-  
-
   // Se ejecuta después de que se haya cambiado el índice
   useEffect(() => {
     if (animating) {
