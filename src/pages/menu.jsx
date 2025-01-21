@@ -24,7 +24,6 @@ import panzerottiMenu from "./img/MenuPhotos/panzerottis.png"
 import panzerotti from './img/italia/panzerottiA.jpeg'
 
 import burguerMenu from "./img/MenuPhotos/jburguersA.png"
-import Bgimg from './img/Burguers/Burguer1.png'
 
 import Burguer1 from './img/Burguers/Burguer1.png'
 import hamburguesa1 from './img/Burguers/hamburguesa1.jpeg'
