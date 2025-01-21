@@ -20,17 +20,16 @@ const Slider = ({ images, className, interval = 3000 }) => {
 
   // Restablece el intervalo cada vez que el currentIndex cambia
   useEffect(() => {
-    // Limpiar el intervalo anterior antes de establecer uno nuevo
     if (intervalId) {
       clearInterval(intervalId);
     }
   
-    // Establecer el nuevo intervalo
     const newIntervalId = setInterval(nextSlide, interval);
     setIntervalId(newIntervalId);
   
     return () => clearInterval(newIntervalId); // Limpiar el intervalo cuando el componente se desmonte
-  }, [currentIndex, interval, intervalId, nextSlide]); // Agregar intervalId y nextSlide como dependencias
+  }, [currentIndex, interval, intervalId, nextSlide]); // Añadir intervalId y nextSlide a las dependencias
+  
   
 
   // Se ejecuta después de que se haya cambiado el índice
