@@ -28,8 +28,8 @@
 }
 #jrText{
     color: #000000ef;
-    width: 52vw;
-    margin-left: 5vw;
+    width: 50vw;
+    margin-right: 10%;
     position: static;
     margin-top: 15vh;
     transform: translate(10px, 10px);
@@ -52,21 +52,22 @@
     border-width: 2px;
     display: flex;
     flex-direction: column;
-    transform: translate(-180%, 5%);
+    transform: translate(0%, 5%);
     margin: 2rem auto;
     margin-top: 24vh;
     box-shadow: 0px 5px 8px 14px rgb(172 120 8 / 15%);
+    padding: 2.5% 4%;
 
 }
 
 
 #IndexColorLogo {
-    width: 25%;
+    width: 25vw;
     position: static;
     height: auto;
     margin: 2rem auto;
-    z-index: 2;
-    transform: translate(-97%, -30%);
+    z-index: 1;
+    transform: translate(-155%, -26%);
     padding: 1%;
     padding-top: 2%;
     padding-bottom: 2%;

@@ -56,9 +56,7 @@ function Index() {
                 “fue complejo pero no dejaremos atras el aprendizaje”.<br/>
               </p>
             </div>
-            <div id="indexInf">
             <img id="IndexColorLogo" class="PorQueJR" alt="Foto a color del logo" src={jrLogoCol} />
-            </div>
               <div class="JrTeamdiv">
             
               <img class="JrTeam" src={jrTeamPhoto} alt="foto del equipo Jr"/>
