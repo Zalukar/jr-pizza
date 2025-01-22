@@ -52,7 +52,7 @@
     border-width: 2px;
     display: flex;
     flex-direction: column;
-    transform: translate(0%, 5%);
+    transform: translate(-11%, 5%);
     margin: 2rem auto;
     margin-top: 24vh;
     box-shadow: 0px 5px 8px 14px rgb(172 120 8 / 15%);
