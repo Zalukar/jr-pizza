@@ -194,7 +194,10 @@
 
 @media (min-width: 420px) and (max-width: 450px) {
     #index {
-        margin-top: 80vh;
+        margin-top: 40vh;
+    }
+    .JrTeamdiv {
+        margin-top: 100%;
     }
 }
 
