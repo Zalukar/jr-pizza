@@ -4,7 +4,7 @@ import InstagramEmbed from './Scripts/instagram-api';
 import ScrollToTop from './Scripts/toTop';
 
 const Social = () => {
-  const postUrl = "https://www.instagram.com/reel/DE3HYgmy-pz/"; 
+  const postUrl = "https://www.instagram.com/p/DE3HYgmy-pz/"; 
 
   return (
       <div id="social">
