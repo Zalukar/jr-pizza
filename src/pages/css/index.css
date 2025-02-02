@@ -37,7 +37,7 @@ body {
   background-color: rgb(255 255 255 / 55%);
   padding: 3%;
   padding-inline: 4%;
-  border-radius: 20px;
+  border-radius: 50px 6px;
   border-style: dashed;
   border-color: #000000d5;
   border-width: 3px;
@@ -54,7 +54,7 @@ body {
   grid-column: span 2;
   max-width: 75vw; /* Máximo para pantallas grandes */
   border-radius: 5px;
-  border-radius: 20px;
+  border-radius: 50px 6px;
   border-width: 2px;
   border-style: dashed;
   border-color: rgb(231, 157, 0, 255);
